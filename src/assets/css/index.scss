@@ -1,0 +1,52 @@
+.box{
+    width: 75%;
+    margin: 0 auto;
+    overflow-y: auto;
+    padding: 20px 0;
+    .search{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .list{
+        margin: 20px 0;
+        .listMain{
+          display: flex; 
+          justify-content: space-between;
+        }
+        .listText{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between
+        }
+    }
+    .listMain {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      height: 30%;
+    }
+    
+    .lazy-image {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* Center the loading and error images */
+    .lazy-image::before,
+    .lazy-image::after {
+      content: '';
+      display: block;
+      width: 30%;
+      height: 30%;
+      text-align: center;
+    }
+   
+}
